@@ -20,7 +20,7 @@ const ProductCard = (props: ProductTypeForProductCard) => {
   }, [currColorIndex]);
 
   useEffect(() => {
-    if (currImageIndex !== 0 && currColorIndex !== 0) setIsImageLoading(true);
+    if (currImageIndex !== 0 || currColorIndex !== 0) setIsImageLoading(true);
   }, [currImageIndex])
 
   const onProductImageOver = useCallback(() => {
