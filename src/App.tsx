@@ -30,7 +30,6 @@ function App() {
   useEffect(() => {
     // init mapping call
     const modifiedProducts = formatProductsWithSkuDetails();
-    console.log({ modifiedProducts });
     setProducts(modifiedProducts);
   }, []);
 
@@ -38,7 +37,7 @@ function App() {
     <div className={styles.content}>
     <h4>Latest Arrivals</h4>
       {parsedProducts.map((product: ProductTypeForProductCard) => (
-        <ProductCard {...product} />
+        <ProductCard key={product.product_id} {...product} />
       ))}
     </div>
   )

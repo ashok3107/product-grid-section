@@ -26,6 +26,10 @@
       border-radius: 50%;
       visibility: hidden;
     }
+    button[disabled] {
+      cursor: not-allowed;
+      pointer-events: none;
+    }
     .nextBtn {
       left: unset;
       right: 10px;
@@ -93,5 +97,11 @@
         border-color: black;
       }
     }
+  }
+}
+
+@media (max-width: 760px) {
+  .productCard {
+    width: 100%;
   }
 }

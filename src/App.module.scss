@@ -13,3 +13,13 @@
     margin: 0 30px;
   }
 }
+
+@media (max-width: 760px) {
+  .content {
+    padding: 3rem;
+    gap: 30px;
+    & > h4 {
+      margin: 0;
+    }
+  }
+}
