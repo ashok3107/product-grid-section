@@ -8,9 +8,8 @@ const ProductCard = (props: ProductTypeForProductCard) => {
     name: productName, colors, detailsByColor,
   } = props;
   const [currColorIndex, setCurrColorIndex] = useState(0);
-  const [isImageLoading, setIsImageLoading] = useState(true);
+  const [isImageLoading, setIsImageLoading] = useState(false);
   const [selectedColorDetails, setSelectedColorDetails] = useState(detailsByColor[colors[0]]);
-  // const [currentImage, setCurrentImage] = useState(selectedColorDetails.images[0]);
   const { salePrice, listPrice, images } = selectedColorDetails;
   const [currImageIndex, setCurrImageIndex] = useState(0);
   const [displayImgButtons, setDisplayImgButtons] = useState(false);
