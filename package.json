@@ -1,9 +1,9 @@
 {
-  "name": "products-grid-section",
+  "name": "product-section-grid",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ashok3107.github.io/product-grid-section/",
+  "homepage": "https://ashok3107.github.io/product-section-grid/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
